@@ -16,6 +16,8 @@ struct PostView: View {
             userInteractionSection
         }
         .padding(.horizontal)
+        .padding(.vertical)
+        .background(Color.white)
     }
     
     private var headerSection: some View {
