@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PostView: View {
+    
+    var post: Post
+    
     var body: some View {
         VStack {
             headerSection
@@ -22,17 +25,17 @@ struct PostView: View {
     
     private var headerSection: some View {
         HStack {
-            Image("michael_jordan_photo")
+            Image(post.user.imageUrl)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 60, height: 60)
                 .clipShape(Circle())
             
             VStack(alignment: .leading) {
-                Text("Michael Jordan")
+                Text(post.user.name)
                     .fontWeight(.semibold)
                 
-                Text("Professional Basketball Player | 6x NBA Champion | 5x NBA MVP")
+                Text(post.user.bio)
                     .lineLimit(1)
                     .foregroundColor(Color(.darkGray))
                 
@@ -45,18 +48,7 @@ struct PostView: View {
     }
     
     private var contentSection: some View {
-        Text("""
-        🕺 Hee-hee! Big news — I’m stepping into the sneaker game.
-        
-        Introducing the Michael Jackson x Air Jordan "Moonwalk" Edition 👟🌙
-        
-        Designed with the amazing team at Jordan Brand, this isn’t just a shoe.
-        It’s movement. It’s legacy.
-        
-        Don’t just walk. Moonwalk. 🎶
-        
-        #MJxAJ #AirJordan #MichaelJackson #MoonwalkEdition #LegacyInMotion
-        """)
+        Text(post.contentText)
         .font(.subheadline)
         .padding(.vertical)
     }
@@ -161,5 +153,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView()
+    PostView(post: MockData.posts.first!)
 }

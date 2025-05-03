@@ -11,8 +11,8 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(0...10, id: \.self) {_ in
-                    PostView()
+                ForEach(MockData.posts, id: \.self) { post in
+                    PostView(post: post)
                 }
             }
         }
