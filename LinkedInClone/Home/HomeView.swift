@@ -16,7 +16,7 @@ struct HomeView: View {
                 }
             }
         }
-        .background(Color.black)
+        .background(Color(.systemGray6))
     }
 }
 

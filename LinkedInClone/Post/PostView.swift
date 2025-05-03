@@ -63,6 +63,7 @@ struct PostView: View {
     
     private var statsSection: some View {
         HStack {
+            reactionsResume
             Spacer()
             
             Button {
@@ -83,6 +84,25 @@ struct PostView: View {
             }
         }
         .font(.subheadline)
+    }
+    
+    private var reactionsResume: some View {
+        HStack(spacing: -6) {
+            Image(systemName: "heart.circle.fill")
+                .foregroundColor(Color.customRed)
+                .background(Circle().stroke(.white, lineWidth: 2))
+            Image(systemName: "hand.thumbsup.circle.fill")
+                .foregroundColor(Color.customBlue)
+                .background(Circle().stroke(.white, lineWidth: 2))
+            Image(systemName: "hand.raised.circle.fill")
+                .foregroundColor(Color.customGreen)
+                .background(Circle().stroke(.white, lineWidth: 2))
+            
+            Text("1,316")
+                .foregroundColor(Color(.darkGray))
+                .padding(.leading, 12)
+        }
+        .imageScale(.large)
     }
     
     private var userInteractionSection: some View {
