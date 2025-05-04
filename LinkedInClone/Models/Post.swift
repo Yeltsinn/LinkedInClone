@@ -11,4 +11,7 @@ struct Post: Hashable {
     var user: User
     var contentText: String
     var publishedDate: Date
+    var commentsCount: Int
+    var repostsCount: Int
+    var reactionsCount: Int
 }

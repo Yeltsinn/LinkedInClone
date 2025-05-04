@@ -61,7 +61,7 @@ struct PostView: View {
             Button {
                 
             } label: {
-                Text("209 comments")
+                Text("\(post.commentsCount) comments")
                     .foregroundColor(Color(.darkGray))
             }
             
@@ -71,7 +71,7 @@ struct PostView: View {
             Button {
                 
             } label: {
-                Text("63 reposts")
+                Text("\(post.repostsCount) reposts")
                     .foregroundColor(Color(.darkGray))
             }
         }
@@ -90,7 +90,7 @@ struct PostView: View {
                 .foregroundColor(Color.customGreen)
                 .background(Circle().stroke(.white, lineWidth: 2))
             
-            Text("1,316")
+            Text("\(post.reactionsCount)")
                 .foregroundColor(Color(.darkGray))
                 .padding(.leading, 12)
         }
@@ -102,47 +102,19 @@ struct PostView: View {
             Divider()
             
             HStack {
-                Button {
-                    
-                } label: {
-                    VStack {
-                        Image(systemName: "hand.thumbsup")
-                        Text("Like")
-                    }
-                }
+                PostActionButton(imageName:  "hand.thumbsup", text: "Like")
                 
                 Spacer()
                 
-                Button {
-                    
-                } label: {
-                    VStack {
-                        Image(systemName: "bubble")
-                        Text("Comment")
-                    }
-                }
+                PostActionButton(imageName:  "bubble", text: "Comment")
                 
                 Spacer()
                 
-                Button {
-                    
-                } label: {
-                    VStack {
-                        Image(systemName: "arrow.2.squarepath")
-                        Text("Repost")
-                    }
-                }
+                PostActionButton(imageName:  "arrow.2.squarepath", text: "Repost")
                 
                 Spacer()
                 
-                Button {
-                    
-                } label: {
-                    VStack {
-                        Image(systemName: "paperplane")
-                        Text("Send")
-                    }
-                }
+                PostActionButton(imageName:  "paperplane", text: "Send")
             }
             .padding(.horizontal)
             .padding(.vertical)

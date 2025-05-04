@@ -66,7 +66,10 @@ enum MockData {
             
             #MJxAJ #AirJordan #MichaelJackson #MoonwalkEdition #LegacyInMotion
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         ),
         Post(
             user: users[1],
@@ -79,7 +82,10 @@ enum MockData {
             
             #StriveForGreatness #KingJames #BasketballNeverStops
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         ),
         Post(
             user: users[2],
@@ -92,7 +98,10 @@ enum MockData {
             
             #FutebolFeminino #Marta #InspireTheNext
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         ),
         Post(
             user: users[3],
@@ -105,7 +114,10 @@ enum MockData {
             
             #RFlegacy #NextGenTennis #GameSetInspire
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         ),
         Post(
             user: users[4],
@@ -118,7 +130,10 @@ enum MockData {
             
             #R9 #FootballLife #Phenomeno
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         ),
         Post(
             user: users[5],
@@ -131,7 +146,10 @@ enum MockData {
             
             #SerenaStyle #OwnYourPower #ChampionMindset
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         ),
         Post(
             user: users[6],
@@ -144,7 +162,10 @@ enum MockData {
             
             #Unshakable #SimoneBiles #MentalHealthMatters
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         ),
         Post(
             user: users[7],
@@ -157,7 +178,10 @@ enum MockData {
             
             #BoltRhythms #LightningBolt #FastLife
             """,
-            publishedDate: Date()
+            publishedDate: Date(),
+            commentsCount: 12,
+            repostsCount: 8,
+            reactionsCount: 546
         )
     ]
 }
