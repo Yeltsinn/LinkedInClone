@@ -48,7 +48,7 @@ struct PostView: View {
     }
     
     private var contentSection: some View {
-        Text(post.contentText)
+        Text(post.content)
         .font(.subheadline)
         .padding(.vertical)
     }

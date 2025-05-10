@@ -1,0 +1,103 @@
+{
+    "post_id": "post_123",
+    "comments": [
+        {
+            "id": "comment_001",
+            "post_id": "post_123",
+            "user": {
+                "id": "user_007",
+                "name": "Simone Biles",
+                "username": "simonebiles",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/simone_biles_photo_x3yjyw.webp",
+                "bio": "Professional Gymnast | 4x Olympic Gold Medalist | USA"
+            },
+            "text": "Amazing insights! Networking is key to success in any field.",
+            "likes": 452,
+            "date": "2025-03-09T14:30:00Z"
+        },
+        {
+            "id": "comment_002",
+            "post_id": "post_123",
+            "user": {
+                "id": "user_002",
+                "name": "Usain Bolt",
+                "username": "usainbolt",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/usain_bolt_photo.webp",
+                "bio": "Fastest Man Alive | 8x Olympic Gold Medalist | Entrepreneur"
+            },
+            "text": "Speed matters in track and life! Great read!",
+            "likes": 389,
+            "date": "2025-03-09T15:00:00Z"
+        },
+        {
+            "id": "comment_003",
+            "post_id": "post_123",
+            "user": {
+                "id": "user_005",
+                "name": "Ronaldo Nazário",
+                "username": "ronaldonazario",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/ronaldo_nazario_photo_maziy2.webp",
+                "bio": "Former Professional Football Player | 2x FIFA World Cup Winner | Brazil"
+            },
+            "text": "Hard work and resilience always pay off!",
+            "likes": 512,
+            "date": "2025-03-09T15:45:00Z"
+        },
+        {
+            "id": "comment_004",
+            "post_id": "post_123",
+            "user": {
+                "id": "user_006",
+                "name": "Serena Williams",
+                "username": "serenawilliams",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/serena_williams_photo_dgu2ba.avif",
+                "bio": "Professional Tennis Player | 23x Grand Slam Champion | USA"
+            },
+            "text": "Passion and determination lead to greatness!",
+            "likes": 624,
+            "date": "2025-03-09T16:20:00Z"
+        },
+        {
+            "id": "comment_005",
+            "post_id": "post_123",
+            "user": {
+                "id": "user_004",
+                "name": "Roger Federer",
+                "username": "rogerfederer",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/roger_federer_photo_uzoe69.webp",
+                "bio": "Professional Tennis Player | 20x Grand Slam Champion | Switzerland"
+            },
+            "text": "Consistency and elegance are key in sports and life!",
+            "likes": 710,
+            "date": "2025-03-09T17:10:00Z"
+        },
+        {
+            "id": "comment_006",
+            "post_id": "post_123",
+            "user": {
+                "id": "user_003",
+                "name": "Michael Jordan",
+                "username": "mj23",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/michael_jordan_photo_seh3yw.jpg",
+                "bio": "Former Professional Basketball Player | 6x NBA Champion | Entrepreneur"
+            },
+            "text": "Talent wins games, but teamwork and intelligence win championships.",
+            "likes": 835,
+            "date": "2025-03-09T17:55:00Z"
+        },
+        {
+            "id": "comment_007",
+            "post_id": "post_123",
+            "user": {
+                "id": "user_002",
+                "name": "Marta Vieira",
+                "username": "martavieira10",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/marta_vieira_photo_nhiotx.jpg",
+                "bio": "Professional Football Player | Brazil National Team | 6x FIFA Best Player"
+            },
+            "text": "Breaking barriers and pushing limits is what makes us stronger!",
+            "likes": 689,
+            "date": "2025-03-09T18:30:00Z"
+        }
+    ]
+}

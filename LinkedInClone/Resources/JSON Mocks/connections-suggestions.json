@@ -1,0 +1,40 @@
+{
+    "connection_suggestions": [
+        {
+            "id": "suggestion_001",
+            "user": {
+                "id": "user_005",
+                "name": "Ronaldo Nazário",
+                "username": "ronaldonazario",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/ronaldo_nazario_photo_maziy2.webp",
+                "bio": "Former Professional Football Player | 2x FIFA World Cup Winner | Brazil"
+            },
+            "suggested_at": "2025-03-03T12:00:00Z",
+            "common_connections": 15
+        },
+        {
+            "id": "suggestion_002",
+            "user": {
+                "id": "user_006",
+                "name": "Serena Williams",
+                "username": "serenawilliams",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/serena_williams_photo_dgu2ba.avif",
+                "bio": "Professional Tennis Player | 23x Grand Slam Champion | USA"
+            },
+            "suggested_at": "2025-03-03T09:30:00Z",
+            "common_connections": 9
+        },
+        {
+            "id": "suggestion_003",
+            "user": {
+                "id": "user_007",
+                "name": "Simone Biles",
+                "username": "simonebiles",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/simone_biles_photo_x3yjyw.webp",
+                "bio": "Professional Gymnast | 4x Olympic Gold Medalist | USA"
+            },
+            "suggested_at": "2025-03-02T14:20:00Z",
+            "common_connections": 6
+        }
+    ]
+}

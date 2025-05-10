@@ -53,8 +53,9 @@ enum MockData {
 
     static let posts: [Post] = [
         Post(
+            id: "post_001",
             user: users[0],
-            contentText: """
+            content: """
             🕺 Hee-hee! Big news — I’m stepping into the sneaker game.
             
             Introducing the Michael Jackson x Air Jordan "Moonwalk" Edition 👟🌙
@@ -72,8 +73,9 @@ enum MockData {
             reactionsCount: 546
         ),
         Post(
+            id: "post_002",
             user: users[1],
-            contentText: """
+            content: """
             🔥 Greatness never settles.
             
             Proud to unveil the "Strive For Greatness" collection — built for those who grind.
@@ -88,8 +90,9 @@ enum MockData {
             reactionsCount: 546
         ),
         Post(
+            id: "post_03",
             user: users[2],
-            contentText: """
+            content: """
             ⚽️ Representing my roots and the power of women in football.
             
             Grateful to launch my new mentorship initiative for young female athletes across Brazil.
@@ -104,8 +107,9 @@ enum MockData {
             reactionsCount: 546
         ),
         Post(
+            id: "post_004",
             user: users[3],
-            contentText: """
+            content: """
             🎾 Back on court — but this time, mentoring the next generation.
             
             Excited to announce the RF Junior Academy.
@@ -120,8 +124,9 @@ enum MockData {
             reactionsCount: 546
         ),
         Post(
+            id: "post_005",
             user: users[4],
-            contentText: """
+            content: """
             ⚽️ From the pitch to the boardroom — proud of our journey with Real Valladolid.
             
             Football gave me everything. Now I give back.
@@ -136,8 +141,9 @@ enum MockData {
             reactionsCount: 546
         ),
         Post(
+            id: "post_006",
             user: users[5],
-            contentText: """
+            content: """
             💥 Power, purpose, and persistence.
             
             Launching the Serena Collection — where sport meets style.
@@ -152,8 +158,9 @@ enum MockData {
             reactionsCount: 546
         ),
         Post(
+            id: "post_007",
             user: users[6],
-            contentText: """
+            content: """
             🌟 Strength is more than medals.
             
             Sharing my story, my struggles, and my triumphs in my new book *Unshakable*.
@@ -168,8 +175,9 @@ enum MockData {
             reactionsCount: 546
         ),
         Post(
+            id: "post_008",
             user: users[7],
-            contentText: """
+            content: """
             ⚡️ Speed meets sound!
             
             Dropping my new track this Friday — it’s all about energy and rhythm.

@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject var viewModel: HomeViewModel = .init()
+    
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(MockData.posts, id: \.self) { post in
+                ForEach(viewModel.posts, id: \.self) { post in
                     PostView(post: post)
                 }
             }

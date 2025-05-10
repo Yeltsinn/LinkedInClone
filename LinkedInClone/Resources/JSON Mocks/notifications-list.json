@@ -1,0 +1,43 @@
+{
+    "notifications": [
+        {
+            "id": "notification_001",
+            "content": "Ronaldo Nazário started following you.",
+            "date_sent": "2025-03-06T14:30:00Z",
+            "status": "unread",
+            "user": {
+                "id": "user_005",
+                "name": "Ronaldo Nazário",
+                "username": "ronaldonazario",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/ronaldo_nazario_photo_maziy2.webp",
+                "bio": "Former Professional Football Player | 2x FIFA World Cup Winner | Brazil"
+            }
+        },
+        {
+            "id": "notification_002",
+            "content": "Roger Federer liked your post: 'Exploring the potential of SwiftData and SwiftUI'.",
+            "date_sent": "2025-03-06T13:15:00Z",
+            "status": "unread",
+            "user": {
+                "id": "user_006",
+                "name": "Roger Federer",
+                "username": "rogerfederer",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/roger_federer_photo_uzoe69.webp",
+                "bio": "20x Grand Slam Champion | Tennis Legend"
+            }
+        },
+        {
+            "id": "notification_003",
+            "content": "Usain Bolt commented on your article: 'Understanding URLSession in Swift'.",
+            "date_sent": "2025-03-06T12:45:00Z",
+            "status": "read",
+            "user": {
+                "id": "user_007",
+                "name": "Usain Bolt",
+                "username": "usainbolt",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/usain_bolt_photo_vxmvgq.webp",
+                "bio": "8x Olympic Gold Medalist | World's Fastest Man"
+            }
+        }
+    ]
+}

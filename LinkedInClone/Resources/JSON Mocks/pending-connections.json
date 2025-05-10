@@ -1,0 +1,40 @@
+{
+    "pending_connections": [
+        {
+            "id": "connection_001",
+            "user": {
+                "id": "user_002",
+                "name": "Marta Vieira",
+                "username": "martavieira10",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/marta_vieira_photo_nhiotx.jpg",
+                "bio": "Professional Football Player | Brazil National Team | 6x FIFA Best Player"
+            },
+            "requested_at": "2025-03-02T15:30:00Z",
+            "common_connections": 8
+        },
+        {
+            "id": "connection_002",
+            "user": {
+                "id": "user_003",
+                "name": "Michael Jordan",
+                "username": "mj23",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/michael_jordan_photo_seh3yw.jpg",
+                "bio": "Former Professional Basketball Player | 6x NBA Champion | Entrepreneur"
+            },
+            "requested_at": "2025-03-01T10:15:00Z",
+            "common_connections": 12
+        },
+        {
+            "id": "connection_003",
+            "user": {
+                "id": "user_004",
+                "name": "Roger Federer",
+                "username": "rogerfederer",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/roger_federer_photo_uzoe69.webp",
+                "bio": "Professional Tennis Player | 20x Grand Slam Champion | Switzerland"
+            },
+            "requested_at": "2025-02-28T18:45:00Z",
+            "common_connections": 5
+        }
+    ]
+}
