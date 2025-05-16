@@ -25,12 +25,16 @@ struct PostView: View {
     
     private var headerSection: some View {
         HStack {
-            Image(post.user.imageUrl)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 60, height: 60)
-                .clipShape(Circle())
-            
+            AsyncImage(url: post.user.profilePicture) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            } placeholder: {
+                ProgressView()
+            }
+            .frame(width: 60, height: 60)
+            .clipShape(Circle())
+
             VStack(alignment: .leading) {
                 Text(post.user.name)
                     .fontWeight(.semibold)
@@ -71,7 +75,7 @@ struct PostView: View {
             Button {
                 
             } label: {
-                Text("\(post.repostsCount) reposts")
+                Text("\(post.sharesCount) reposts")
                     .foregroundColor(Color(.darkGray))
             }
         }

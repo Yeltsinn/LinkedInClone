@@ -12,42 +12,42 @@ enum MockData {
         User(
             name: "Michael Jordan",
             bio: "Professional Basketball Player | 6x NBA Champion | 5x NBA MVP",
-            imageUrl: "michael_jordan_photo"
+            profilePicture: URL(string: "michael_jordan_photo")!
         ),
         User(
             name: "LeBron James",
             bio: "Professional Basketball Player | 4x NBA Champion | Philanthropist",
-            imageUrl: "lebron_james_photo"
+            profilePicture: URL(string: "lebron_james_photo")!
         ),
         User(
             name: "Marta Vieira",
             bio: "Professional Soccer Player | 6x FIFA World Player of the Year | Brazil Legend",
-            imageUrl: "marta_vieira_photo"
+            profilePicture: URL(string: "marta_vieira_photo")!
         ),
         User(
             name: "Roger Federer",
             bio: "Tennis Legend | 20x Grand Slam Champion | Global Ambassador",
-            imageUrl: "roger_federer_photo"
+            profilePicture: URL(string: "roger_federer_photo")!
         ),
         User(
             name: "Ronaldo Nazário",
             bio: "Football Icon | 2x Ballon d'Or | World Cup Winner",
-            imageUrl: "ronaldo_nazario_photo"
+            profilePicture: URL(string: "ronaldo_nazario_photo")!
         ),
         User(
             name: "Serena Williams",
             bio: "Tennis Champion | 23x Grand Slam Titles | Entrepreneur",
-            imageUrl: "serena_williams_photo"
+            profilePicture: URL(string: "serena_williams_photo")!
         ),
         User(
             name: "Simone Biles",
             bio: "Gymnastics GOAT | 7x Olympic Medalist | Mental Health Advocate",
-            imageUrl: "simone_biles_photo"
+            profilePicture: URL(string: "simone_biles_photo")!
         ),
         User(
             name: "Usain Bolt",
             bio: "World's Fastest Man | 8x Olympic Gold Medalist | Sprinter & DJ",
-            imageUrl: "usain_bolt_photo"
+            profilePicture: URL(string: "usain_bolt_photo")!
         )
     ]
 
@@ -67,9 +67,9 @@ enum MockData {
             
             #MJxAJ #AirJordan #MichaelJackson #MoonwalkEdition #LegacyInMotion
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         ),
         Post(
@@ -84,9 +84,9 @@ enum MockData {
             
             #StriveForGreatness #KingJames #BasketballNeverStops
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         ),
         Post(
@@ -101,9 +101,9 @@ enum MockData {
             
             #FutebolFeminino #Marta #InspireTheNext
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         ),
         Post(
@@ -118,9 +118,9 @@ enum MockData {
             
             #RFlegacy #NextGenTennis #GameSetInspire
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         ),
         Post(
@@ -135,9 +135,9 @@ enum MockData {
             
             #R9 #FootballLife #Phenomeno
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         ),
         Post(
@@ -152,9 +152,9 @@ enum MockData {
             
             #SerenaStyle #OwnYourPower #ChampionMindset
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         ),
         Post(
@@ -169,9 +169,9 @@ enum MockData {
             
             #Unshakable #SimoneBiles #MentalHealthMatters
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         ),
         Post(
@@ -186,9 +186,9 @@ enum MockData {
             
             #BoltRhythms #LightningBolt #FastLife
             """,
-            publishedDate: Date(),
+            createdAt: Date(),
             commentsCount: 12,
-            repostsCount: 8,
+            sharesCount: 8,
             reactionsCount: 546
         )
     ]

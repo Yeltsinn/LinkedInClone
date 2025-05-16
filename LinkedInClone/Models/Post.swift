@@ -11,9 +11,9 @@ struct Post: Hashable, Codable {
     var id: String
     var user: User
     var content: String
-    var publishedDate: Date
+    var createdAt: Date
     var commentsCount: Int
-    var repostsCount: Int
+    var sharesCount: Int
     var reactionsCount: Int
 }
 

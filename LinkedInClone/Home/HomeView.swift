@@ -20,6 +20,9 @@ struct HomeView: View {
             }
         }
         .background(Color(.systemGray6))
+        .onAppear {
+            viewModel.fetchPostFeed()
+        }
     }
 }
 

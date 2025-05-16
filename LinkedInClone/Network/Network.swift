@@ -10,6 +10,6 @@ import Foundation
 enum Network {
     
     enum Endpoint {
-        static let postFeed = URL(string: "https://api.linkedin.com/v2/me/activities")!
+        static let postFeed = URL(string: "https://run.mocky.io/v3/c4aa131b-3158-4114-a99d-c3f9591dda7b")!
     }
 }
