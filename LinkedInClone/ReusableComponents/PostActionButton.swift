@@ -12,15 +12,12 @@ struct PostActionButton: View {
     let text: String
     
     var body: some View {
-        Button {
-            
-        } label: {
-            VStack {
-                Image(systemName: imageName)
-                Text(text)
-            }
+        VStack {
+            Image(systemName: imageName)
+            Text(text)
         }
         .foregroundColor(Color(.darkGray))
         .fontWeight(.bold)
+        .font(.subheadline)
     }
 }

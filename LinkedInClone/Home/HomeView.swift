@@ -12,16 +12,18 @@ struct HomeView: View {
     @StateObject var viewModel: HomeViewModel = .init()
     
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(viewModel.posts, id: \.self) { post in
-                    PostView(post: post)
+        NavigationStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach(viewModel.posts, id: \.self) { post in
+                        PostView(post: post)
+                    }
                 }
             }
-        }
-        .background(Color(.systemGray6))
-        .onAppear {
-            viewModel.fetchPostFeed()
+            .background(Color(.systemGray6))
+            .onAppear {
+                viewModel.fetchPostFeed()
+            }
         }
     }
 }

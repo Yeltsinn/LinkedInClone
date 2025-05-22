@@ -9,14 +9,21 @@ import SwiftUI
 
 struct PostView: View {
     
-    var post: Post
+    @StateObject var viewModel: PostViewModel
+    
+    init(post: Post) {
+        _viewModel = StateObject(wrappedValue: PostViewModel(post: post))
+    }
     
     var body: some View {
-        VStack {
-            headerSection
-            contentSection
-            statsSection
-            userInteractionSection
+        ScrollView {
+            VStack {
+                headerSection
+                contentSection
+                statsSection
+                userInteractionSection
+                Spacer()
+            }
         }
         .padding(.horizontal)
         .padding(.vertical)
@@ -25,7 +32,7 @@ struct PostView: View {
     
     private var headerSection: some View {
         HStack {
-            AsyncImage(url: post.user.profilePicture) { image in
+            AsyncImage(url: viewModel.post.user.profilePicture) { image in
                 image
                     .resizable()
                     .scaledToFill()
@@ -34,12 +41,12 @@ struct PostView: View {
             }
             .frame(width: 60, height: 60)
             .clipShape(Circle())
-
+            
             VStack(alignment: .leading) {
-                Text(post.user.name)
+                Text(viewModel.post.user.name)
                     .fontWeight(.semibold)
                 
-                Text(post.user.bio)
+                Text(viewModel.post.user.bio)
                     .lineLimit(1)
                     .foregroundColor(Color(.darkGray))
                 
@@ -52,9 +59,9 @@ struct PostView: View {
     }
     
     private var contentSection: some View {
-        Text(post.content)
-        .font(.subheadline)
-        .padding(.vertical)
+        Text(viewModel.post.content)
+            .font(.subheadline)
+            .padding(.vertical)
     }
     
     private var statsSection: some View {
@@ -65,7 +72,7 @@ struct PostView: View {
             Button {
                 
             } label: {
-                Text("\(post.commentsCount) comments")
+                Text("\(viewModel.post.commentsCount) comments")
                     .foregroundColor(Color(.darkGray))
             }
             
@@ -75,7 +82,7 @@ struct PostView: View {
             Button {
                 
             } label: {
-                Text("\(post.sharesCount) reposts")
+                Text("\(viewModel.post.sharesCount) reposts")
                     .foregroundColor(Color(.darkGray))
             }
         }
@@ -94,7 +101,7 @@ struct PostView: View {
                 .foregroundColor(Color.customGreen)
                 .background(Circle().stroke(.white, lineWidth: 2))
             
-            Text("\(post.reactionsCount)")
+            Text("\(viewModel.post.reactionsCount)")
                 .foregroundColor(Color(.darkGray))
                 .padding(.leading, 12)
         }
@@ -110,7 +117,9 @@ struct PostView: View {
                 
                 Spacer()
                 
-                PostActionButton(imageName:  "bubble", text: "Comment")
+                NavigationLink(destination: CommentPostView(post: viewModel.post)) {
+                    PostActionButton(imageName:  "bubble", text: "Comment")
+                }
                 
                 Spacer()
                 
