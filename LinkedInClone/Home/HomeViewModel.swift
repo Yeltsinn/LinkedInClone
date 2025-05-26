@@ -13,7 +13,6 @@ class HomeViewModel: ObservableObject {
     
     func fetchPostFeed() {
         NetworkRequestor.getFeedItems()
-            .map(\.feed)
             .replaceError(with: [])
             .receive(on: DispatchQueue.main)
             .assign(to: &$posts)

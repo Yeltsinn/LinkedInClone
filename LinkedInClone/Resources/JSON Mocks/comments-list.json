@@ -1,5 +1,4 @@
 {
-    "post_id": "post_123",
     "comments": [
         {
             "id": "comment_001",
@@ -22,7 +21,7 @@
                 "id": "user_002",
                 "name": "Usain Bolt",
                 "username": "usainbolt",
-                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/usain_bolt_photo.webp",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/usain_bolt_photo_vxmvgq.webp",
                 "bio": "Fastest Man Alive | 8x Olympic Gold Medalist | Entrepreneur"
             },
             "text": "Speed matters in track and life! Great read!",
