@@ -15,8 +15,11 @@ struct HomeView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(viewModel.posts, id: \.self) { post in
+                    ForEach(viewModel.posts, id: \.id) { post in
                         PostView(post: post)
+                            .onAppear {
+                                viewModel.fetchMorePostsIfNeeded(currentlyDisplayedPost: post)
+                            }
                     }
                 }
             }

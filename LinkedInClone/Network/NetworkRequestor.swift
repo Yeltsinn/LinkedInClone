@@ -9,11 +9,11 @@ import Foundation
 import Combine
 
 class NetworkRequestor {
-    static func getFeedItems() -> AnyPublisher<[Post], Swift.Error> {
+    static func getFeedItems(page: Int, limit: Int = 5) -> AnyPublisher<PagedItem<Post>, Swift.Error> {
         URLSession.shared
-            .dataTaskPublisher(for: Network.Endpoint.postFeed)
+            .dataTaskPublisher(for: Network.Endpoint.postFeed(page: page, limit: limit))
             .map(\.data)
-            .decode(type: [Post].self, decoder: JSONDecoder.snakeCase)
+            .decode(type: PagedItem<Post>.self, decoder: JSONDecoder.snakeCase)
             .eraseToAnyPublisher()
     }
 

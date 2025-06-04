@@ -11,7 +11,15 @@ enum Network {
     
     enum Endpoint {
         static let baseURLString = "http://localhost:3000"
-        static let postFeed = URL(string: "\(baseURLString)/feed")!
         static let commentsList = URL(string: "\(baseURLString)/comments")!
+        
+        static func postFeed(page: Int, limit: Int) -> URL {
+            var urlComponents = URLComponents(string: "\(baseURLString)/feed")!
+            urlComponents.queryItems = [
+                URLQueryItem(name: "_page", value: "\(page)"),
+                URLQueryItem(name: "_per_page", value: "\(limit)")
+            ]
+            return urlComponents.url!
+        }
     }
 }

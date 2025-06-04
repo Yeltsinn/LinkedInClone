@@ -19,16 +19,19 @@ struct CommentInputTextView: View {
     var profilePictureURL: URL
     
     var body: some View {
-        HStack(alignment: .center) {
-            userProfileImage
-            inputTextField
-        }
-        .padding(.horizontal)
-        .padding(.vertical)
-        .background(.white)
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Constants.delayToStartFocus) {
-                isTextFieldFocused = true
+        ZStack(alignment: .top) {
+            blurView
+            HStack(alignment: .center) {
+                userProfileImage
+                inputTextField
+            }
+            .padding(.horizontal)
+            .padding(.vertical)
+            .background(.white)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + Constants.delayToStartFocus) {
+                    isTextFieldFocused = true
+                }
             }
         }
     }
@@ -54,5 +57,12 @@ struct CommentInputTextView: View {
                 Capsule()
                     .stroke(Color.gray.opacity(0.5), lineWidth: 1)
             )
+    }
+    
+    private var blurView: some View {
+        Rectangle()
+            .fill(Color.black.opacity(0.25))
+            .frame(height: 10)
+            .blur(radius: 5)
     }
 }

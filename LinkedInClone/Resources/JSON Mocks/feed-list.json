@@ -119,6 +119,186 @@
             "comments_count": 560,
             "reactions_count": 3,
             "created_at": "2025-03-04T06:40:00Z"
+        },
+        {
+            "id": "post_009",
+            "user": {
+                "id": "user_009",
+                "name": "Cristiano Ronaldo",
+                "username": "cr7",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/cristiano_ronaldo_photo.webp",
+                "bio": "Professional Football Player | Al-Nassr FC | Portugal"
+            },
+            "content": "Success is earned, not given. Every day I train with one goal: to be the best. Focus, sacrifice, and hard work make the difference.\n\nStay hungry, stay humble. 👊⚽",
+            "shares_count": 1300,
+            "comments_count": 600,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T06:00:00Z"
+        },
+        {
+            "id": "post_010",
+            "user": {
+                "id": "user_010",
+                "name": "Naomi Osaka",
+                "username": "naomiosaka",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/naomi_osaka_photo.webp",
+                "bio": "Professional Tennis Player | 4x Grand Slam Champion | Japan"
+            },
+            "content": "Taking care of your mental health is not a weakness—it's strength. Be kind to yourself and others.\n\nPlay for joy, play with purpose. 🎾🌸",
+            "shares_count": 800,
+            "comments_count": 330,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T05:20:00Z"
+        },
+        {
+            "id": "post_011",
+            "user": {
+                "id": "user_011",
+                "name": "Pelé",
+                "username": "pele10",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/pele_photo.webp",
+                "bio": "Legendary Football Player | 3x FIFA World Cup Winner | Brazil"
+            },
+            "content": "The beautiful game taught me joy, unity, and passion. Football is not just sport—it’s art, culture, and hope for many.\n\nPlay with love and respect. ⚽👑",
+            "shares_count": 1500,
+            "comments_count": 700,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T05:00:00Z"
+        },
+        {
+            "id": "post_012",
+            "user": {
+                "id": "user_012",
+                "name": "Megan Rapinoe",
+                "username": "mrapinoe",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/megan_rapinoe_photo.webp",
+                "bio": "Professional Football Player | USA National Team | Activist"
+            },
+            "content": "Speak up, stand proud. Sports give us a platform—use it to demand justice, equality, and change.\n\nWe win when everyone has a chance to play. ⚽✊",
+            "shares_count": 870,
+            "comments_count": 390,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T04:35:00Z"
+        },
+        {
+            "id": "post_013",
+            "user": {
+                "id": "user_013",
+                "name": "Lewis Hamilton",
+                "username": "lewishamilton",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/lewis_hamilton_photo.webp",
+                "bio": "Formula 1 Driver | 7x World Champion | Mercedes-AMG Petronas"
+            },
+            "content": "Every race is a chance to push boundaries. I fight for speed, but also for diversity and a better world.\n\nDrive with heart, live with purpose. 🏁🌍",
+            "shares_count": 990,
+            "comments_count": 420,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T04:00:00Z"
+        },
+        {
+            "id": "post_014",
+            "user": {
+                "id": "user_014",
+                "name": "Valentina Shevchenko",
+                "username": "bulletvalentina",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1748353547/Screenshot_2025-05-27_at_10.39.54_mzgjd3.png",
+                "bio": "UFC Fighter | Flyweight Champion | Kyrgyzstan"
+            },
+            "content": "Martial arts is about control, respect, and power. You train your body and mind for every battle—inside and out.\n\nFight smart, stay disciplined. 🥋👊",
+            "shares_count": 620,
+            "comments_count": 260,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T03:30:00Z"
+        },
+        {
+            "id": "post_015",
+            "user": {
+                "id": "user_015",
+                "name": "Tom Brady",
+                "username": "tombrady",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/tom_brady_photo.webp",
+                "bio": "Former NFL Quarterback | 7x Super Bowl Champion | USA"
+            },
+            "content": "Leadership is earned with consistency and commitment. Age doesn't define greatness—your mindset does.\n\nOutwork them all. 🏈🔥",
+            "shares_count": 1120,
+            "comments_count": 470,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T03:00:00Z"
+        },
+        {
+            "id": "post_016",
+            "user": {
+                "id": "user_016",
+                "name": "Allyson Felix",
+                "username": "allysonfelix",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/allyson_felix_photo.webp",
+                "bio": "Olympic Sprinter | Most Decorated Female Track Athlete | USA"
+            },
+            "content": "You don’t always need to be the loudest to make an impact. Let your discipline and dedication speak.\n\nRun your race, your way. 🏃‍♀️🏅",
+            "shares_count": 880,
+            "comments_count": 410,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T02:40:00Z"
+        },
+        {
+            "id": "post_017",
+            "user": {
+                "id": "user_017",
+                "name": "Zlatan Ibrahimović",
+                "username": "iamzlatan",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/zlatan_ibrahimovic_photo.webp",
+                "bio": "Football Legend | Former AC Milan & Sweden National Team"
+            },
+            "content": "Confidence isn't arrogance—it's knowing your worth. You must believe you're the best before anyone else does.\n\nDare to be different. ⚽🦁",
+            "shares_count": 970,
+            "comments_count": 430,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T02:10:00Z"
+        },
+        {
+            "id": "post_018",
+            "user": {
+                "id": "user_018",
+                "name": "Ronda Rousey",
+                "username": "rondarousey",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/ronda_rousey_photo.webp",
+                "bio": "MMA Fighter | Olympic Medalist | Former WWE Champion | USA"
+            },
+            "content": "They said I couldn’t. I showed them I could. Believe in yourself even when no one else does.\n\nBreak the mold, break the limits. 🥊🔥",
+            "shares_count": 940,
+            "comments_count": 390,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T01:45:00Z"
+        },
+        {
+            "id": "post_019",
+            "user": {
+                "id": "user_019",
+                "name": "Stephen Curry",
+                "username": "stephencurry30",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108787/stephen_curry_photo.webp",
+                "bio": "NBA Player | Golden State Warriors | 4x NBA Champion"
+            },
+            "content": "Shooters shoot. You miss 100% of the shots you don’t take. Keep grinding, keep believing.\n\nLet the game come to you. 🏀💦",
+            "shares_count": 1150,
+            "comments_count": 500,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T01:20:00Z"
+        },
+        {
+            "id": "post_020",
+            "user": {
+                "id": "user_020",
+                "name": "Gabriela Medina",
+                "username": "gmedina",
+                "profile_picture": "https://res.cloudinary.com/dtllfjvnj/image/upload/v1741108786/gabriela_medina_photo.webp",
+                "bio": "Professional Surfer | World Surf League Champion | Brazil"
+            },
+            "content": "The ocean teaches you humility and strength. You can’t control the waves, but you can master how you ride them.\n\nLive free, surf hard. 🌊🏄‍♀️",
+            "shares_count": 790,
+            "comments_count": 340,
+            "reactions_count": 3,
+            "created_at": "2025-03-04T01:00:00Z"
         }
     ]
 }
