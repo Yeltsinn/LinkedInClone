@@ -16,14 +16,24 @@ struct CommentInputTextView: View {
     @Binding var commentText: String
     @FocusState var isTextFieldFocused: Bool
     
+    var isCommentReady: Bool
     var profilePictureURL: URL
+
+    /* button actions */
+    var commentPost: () -> Void
+    var tagPeople: () -> Void
+    var uploadImage: () -> Void
+    var onChangeText: (String) -> Void
     
     var body: some View {
         ZStack(alignment: .top) {
             blurView
-            HStack(alignment: .center) {
-                userProfileImage
-                inputTextField
+            VStack {
+                HStack(alignment: .center) {
+                    userProfileImage
+                    inputTextField
+                }
+                userInteractionSection
             }
             .padding(.horizontal)
             .padding(.vertical)
@@ -57,6 +67,43 @@ struct CommentInputTextView: View {
                 Capsule()
                     .stroke(Color.gray.opacity(0.5), lineWidth: 1)
             )
+            .onChange(of: commentText, perform: onChangeText)
+    }
+    
+    private var userInteractionSection: some View {
+        HStack {
+            
+            Button {
+                uploadImage()
+            } label: {
+                Image(systemName: "photo")
+            }
+            
+            Button {
+                tagPeople()
+            } label: {
+                Image(systemName: "at")
+            }
+            
+            Spacer()
+            
+            Button {
+                commentPost()
+            } label: {
+                Text("Comment")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                    .foregroundColor(isCommentReady ? Color.white : Color(.systemGray))
+                    .padding(.horizontal, 15)
+                    .padding(.vertical, 4)
+                    .background(
+                        Capsule()
+                            .fill(isCommentReady ? Color.blue : Color(.systemGray6))
+                    )
+            }
+            .disabled(!isCommentReady)
+        }
+        .padding(.top)
     }
     
     private var blurView: some View {

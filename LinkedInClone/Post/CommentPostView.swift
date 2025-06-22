@@ -24,13 +24,41 @@ struct CommentPostView: View {
         ZStack(alignment: .bottom) {
             ScrollView {
                 VStack {
-                    PostView(post: viewModel.post)
+                    PostView(viewModel: viewModel)
                     commentsList
                 }
             }
             
-            if viewModel.shouldShowCommentSection {
-                CommentInputTextView(commentText: $viewModel.commentText, profilePictureURL: viewModel.post.user.profilePicture)
+            VStack(spacing: .zero) {
+                
+                if viewModel.shouldShowUsersToTagList {
+                    ScrollView {
+                        UsersToTagListView(users: viewModel.usersToTag)
+                    }
+                    .frame(maxHeight: .infinity)
+                    .transition(.move(edge: .bottom))
+                    .zIndex(1)
+                }
+                
+                if viewModel.shouldShowCommentSection {
+                    CommentInputTextView(
+                        commentText: $viewModel.commentText,
+                        isCommentReady: viewModel.isCommentReady,
+                        profilePictureURL: viewModel.post.user.profilePicture,
+                        commentPost: {
+                            viewModel.sendComment()
+                        },
+                        tagPeople: {
+                            viewModel.tagPeople()
+                        },
+                        uploadImage: {
+                            viewModel.uploadImage()
+                        },
+                        onChangeText: { newText in
+                            viewModel.commentTextDidChange(newText)
+                        }
+                    )
+                }
             }
         }
         .onAppear {

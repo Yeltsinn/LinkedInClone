@@ -24,6 +24,14 @@ class NetworkRequestor {
             .decode(type: [Comment].self, decoder: JSONDecoder.snakeCase)
             .eraseToAnyPublisher()
     }
+    
+    static func getUsersToTag() -> AnyPublisher<[User], Swift.Error> {
+        URLSession.shared
+            .dataTaskPublisher(for: Network.Endpoint.usersList)
+            .map(\.data)
+            .decode(type: [User].self, decoder: JSONDecoder.snakeCase)
+            .eraseToAnyPublisher()
+    }
 }
 
 
