@@ -33,7 +33,12 @@ struct CommentPostView: View {
                 
                 if viewModel.shouldShowUsersToTagList {
                     ScrollView {
-                        UsersToTagListView(users: viewModel.usersToTag)
+                        UsersToTagListView(
+                            users: viewModel.usersToTag,
+                            onSelect: { user in
+                                viewModel.userToTagDidSelect(user)
+                            }
+                        )
                     }
                     .frame(maxHeight: .infinity)
                     .transition(.move(edge: .bottom))

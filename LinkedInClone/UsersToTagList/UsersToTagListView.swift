@@ -11,6 +11,8 @@ struct UsersToTagListView: View {
     
     var users: [User]
     
+    var onSelect: (User) -> Void
+    
     var body: some View {
         LazyVStack {
             ForEach(users, id: \.self) { user in
@@ -39,6 +41,9 @@ struct UsersToTagListView: View {
                     Spacer()
                 }
                 .padding(.horizontal)
+                .onTapGesture {
+                    onSelect(user)
+                }
             }
         }
         .padding(.vertical)

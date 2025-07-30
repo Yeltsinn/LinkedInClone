@@ -52,11 +52,16 @@ class PostViewModel: ObservableObject {
         getUsersToTag()
     }
     
+    func userToTagDidSelect(_ user: User) {
+        guard commentText.last == "@" else { return }
+        commentText.removeLast()
+        commentText += user.name
+    }
+    
     private func getUsersToTag() {
         NetworkRequestor.getUsersToTag()
             .receive(on: DispatchQueue.main)
             .replaceError(with: [])
             .assign(to: &$usersToTag)
-        
     }
 }
